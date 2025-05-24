@@ -66,7 +66,7 @@ const Login = () => {
         </form>
 
         <div className="auth-footer">
-          Don't have an account? <Link to="https://task-backend-jcj4.onrender.com/register">Sign up</Link>
+          Don't have an account? <Link to="/register">Sign up</Link>
         </div>
       </div>
     </div>
