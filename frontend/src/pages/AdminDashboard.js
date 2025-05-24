@@ -297,7 +297,7 @@ const AdminDashboard = () => {
                     </div>
                   </td>
                   <td>
-                    <Link to={`https://task-backend-jcj4.onrender.com/admin/user-tasks/${stat.userId}`} className="btn btn-sm btn-primary">
+                    <Link to={`/admin/user-tasks/${stat.userId}`} className="btn btn-sm btn-primary">
                       View Tasks
                     </Link>
                   </td>
@@ -311,7 +311,7 @@ const AdminDashboard = () => {
       <div className="card">
         <div className="card-header">
           <h3 className="card-title">Recently Added Users</h3>
-          <Link to="https://task-backend-jcj4.onrender.com/users" className="btn btn-secondary">
+          <Link to="/users" className="btn btn-secondary">
             View All Users
           </Link>
         </div>
@@ -339,7 +339,7 @@ const AdminDashboard = () => {
                   </td>
                   <td>{new Date(user.createdAt).toLocaleDateString()}</td>
                   <td>
-                    <Link to={`https://task-backend-jcj4.onrender.com/admin/user-tasks/${user._id}`} className="btn btn-sm btn-primary">
+                    <Link to={`/admin/user-tasks/${user._id}`} className="btn btn-sm btn-primary">
                       View Tasks
                     </Link>
                   </td>
