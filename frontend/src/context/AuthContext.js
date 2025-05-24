@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
   const register = async (userData) => {
     try {
       setLoading(true)
-      const response = await axios.post("/api/auth/register", userData)
+      const response = await axios.post("https://task-backend-jcj4.onrender.com/api/auth/register", userData)
       const data = response.data
 
       setUser(data)
@@ -39,7 +39,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     try {
       setLoading(true)
-      const response = await axios.post("/api/auth/login", { email, password })
+      const response = await axios.post("https://task-backend-jcj4.onrender.com/api/auth/login", { email, password })
       const data = response.data
 
       setUser(data)
@@ -69,7 +69,7 @@ export const AuthProvider = ({ children }) => {
         },
       }
 
-      const response = await axios.put("/api/auth/profile", userData, config)
+      const response = await axios.put("https://task-backend-jcj4.onrender.com/api/auth/profile", userData, config)
       const updatedUser = { ...response.data, token: user.token }
 
       setUser(updatedUser)
