@@ -99,7 +99,7 @@ const TaskList = () => {
       <div className="card">
         <div className="card-header">
           <h2 className="card-title">Task List</h2>
-          <Link to="https://task-backend-jcj4.onrender.com/tasks/new" className="btn btn-primary">
+          <Link to="/tasks/new" className="btn btn-primary">
             <FaPlus /> New Task
           </Link>
         </div>
