@@ -13,7 +13,7 @@ const NotFound = () => {
         <p className="text-center mb-4">The page you are looking for does not exist.</p>
 
         <div className="text-center">
-          <Link to="/" className="btn btn-primary">
+          <Link to="https://task-backend-jcj4.onrender.com/" className="btn btn-primary">
             <FaHome /> Go to Dashboard
           </Link>
         </div>
