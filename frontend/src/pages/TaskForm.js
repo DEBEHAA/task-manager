@@ -91,7 +91,7 @@ const TaskForm = () => {
       } else {
         await createTask(formData)
       }
-      navigate("https://task-backend-jcj4.onrender.com/tasks")
+      navigate("/tasks")
     } catch (error) {
       console.error("Failed to save task:", error)
     }
